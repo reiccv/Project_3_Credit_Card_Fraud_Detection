@@ -93,18 +93,36 @@ The code below would work best for this model.
 class_weights_tf = {class_id: weight for class_id, weight in class_weights.items()}`
 
 ## Logistic Regression Model
+Logistic regression is a simple yet effective algorithm for binary classification problems like fraud detection.
+
+### Data Preprocessing/Cleaning
+
+![](https://github.com/reiccv/Project_3_Credit_Card_Fraud_Detection/blob/main/images/LogDataClean.PNG)
+
+![](https://github.com/reiccv/Project_3_Credit_Card_Fraud_Detection/blob/main/images/LogDataClean2.PNG)
+
+![](https://github.com/reiccv/Project_3_Credit_Card_Fraud_Detection/blob/main/images/LogDataClean3.PNG)
+
+![](https://github.com/reiccv/Project_3_Credit_Card_Fraud_Detection/blob/main/images/LogDataClean4.PNG)
+
+### Model Training
+
+![](https://github.com/reiccv/Project_3_Credit_Card_Fraud_Detection/blob/main/images/logsettingup.PNG)
+
+![](https://github.com/reiccv/Project_3_Credit_Card_Fraud_Detection/blob/main/images/logsettingup2.PNG)
+
+![]()
 
 ## Model Evaluation Metrics
-When evaluating the model's performance, consider the following metrics:
 
-Accuracy: The overall proportion of correct predictions.
-Precision: The proportion of true positive predictions out of all positive predictions, indicating the model's ability to avoid false alarms (incorrectly predicting fraud).
-Recall (Sensitivity): The proportion of true positive predictions out of all actual positive cases, representing the model's ability to detect actual fraud cases.
-F1 Score: The harmonic mean of precision and recall, providing a balanced evaluation of the model's performance.
 
 High accuracy from the  NN model
 
 ![](https://github.com/reiccv/Project_3_Credit_Card_Fraud_Detection/blob/main/images/accuracy.PNG)
+
+ROC-Curve
+
+![](https://github.com/reiccv/Project_3_Credit_Card_Fraud_Detection/blob/main/images/ROCcurve.PNG)
 
 NN Predictions and actual Data
 
@@ -114,10 +132,33 @@ NN Checking Results DataFrame to check if model was actually able to predict Fra
 
 ![](https://github.com/reiccv/Project_3_Credit_Card_Fraud_Detection/blob/main/images/results_fradulent.PNG)
 
-## Conclusions
+Logistic Regression Model
 
+Confusion Matrix
+
+![](https://github.com/reiccv/Project_3_Credit_Card_Fraud_Detection/blob/main/images/LogConfusionMatrix.PNG)
+
+Model Evaluation Metrics
+
+![](https://github.com/reiccv/Project_3_Credit_Card_Fraud_Detection/blob/main/images/ModelEvalMetricsLog.PNG)
+
+Having perfect scores on all means the logistic regression model is the more optimal model in predicting fraud
+
+
+
+## Conclusions
+Since credit card fraud detection is an imbalanced classification problem (fraudulent transactions are usually rare compared to non-fraudulent ones), consider using techniques like resampling (e.g., oversampling, undersampling) or using different evaluation metrics to handle class imbalance.
+
+Feature engineering can significantly impact the model's performance. Experiment with creating new features or using domain knowledge to extract relevant information.
+
+Use cross-validation to assess the model's stability and generalization performance.
+
+Depending on the dataset's size and complexity, consider using more advanced algorithms such as random forests, gradient boosting, or deep learning models to improve performance.
+
+Ensure to properly handle sensitive information and follow data privacy and security guidelines when working with credit card transaction data.
 Credit card fraud detection is a critical and sensitive task. It is important to continually update and improve the model to stay ahead of new fraud patterns and techniques. Regularly retrain the model with the latest data and perform thorough evaluations to ensure its effectiveness. 
 
 Credit card data should also be handled with the most care
 
+With following the steps above you can build a simple yet effective model to identify fraudulent credit card transactions and contribute to enhancing financial security and fraud prevention.
 Whats next for our model would be continously recalibrate it (retrain) and further research so the model can execute real time detection.
