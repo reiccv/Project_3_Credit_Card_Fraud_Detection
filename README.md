@@ -29,8 +29,9 @@ You can install these dependencies using pip:
 
 ### Imports
 
-![]()
+![](https://github.com/reiccv/Project_3_Credit_Card_Fraud_Detection/blob/main/images/imports_nn.PNG)
 
+![]()
 ## Dataset
 
 The dataset used to train and evaluate the model is included in this repository, you can find various publicly available datasets for credit card fraud detection on online platforms such as Kaggle or UCI Machine Learning Repository.
@@ -43,11 +44,19 @@ The neural network model is built using TensorFlow and Keras. It employs several
 
 ### Data Cleaning
 
-![]()
+![](https://github.com/reiccv/Project_3_Credit_Card_Fraud_Detection/blob/main/images/readincsvdf.PNG)
 
-![]()
+![](https://github.com/reiccv/Project_3_Credit_Card_Fraud_Detection/blob/main/images/showDtypes.PNG)
 
-![]()
+![](https://github.com/reiccv/Project_3_Credit_Card_Fraud_Detection/blob/main/images/cleaningencoding.PNG)
+
+### Setting up NN model
+
+![](https://github.com/reiccv/Project_3_Credit_Card_Fraud_Detection/blob/main/images/settingTargetsFeatures.PNG)
+
+![](https://github.com/reiccv/Project_3_Credit_Card_Fraud_Detection/blob/main/images/settingupmodelnn.PNG)
+
+![](https://github.com/reiccv/Project_3_Credit_Card_Fraud_Detection/blob/main/images/compilingandfitting.PNG)
 
 ### High Accuracy 
 When properly trained and optimized, neural network models can achieve high accuracy in detecting fraudulent transactions. 
@@ -64,6 +73,15 @@ Accuracy: The overall proportion of correct predictions.
 Precision: The proportion of true positive predictions out of all positive predictions, indicating the model's ability to avoid false alarms (incorrectly predicting fraud).
 Recall (Sensitivity): The proportion of true positive predictions out of all actual positive cases, representing the model's ability to detect actual fraud cases.
 F1 Score: The harmonic mean of precision and recall, providing a balanced evaluation of the model's performance.
+
+High accuracy from the model
+![](https://github.com/reiccv/Project_3_Credit_Card_Fraud_Detection/blob/main/images/accuracy.PNG)
+
+Predictions and actual Data
+![](https://github.com/reiccv/Project_3_Credit_Card_Fraud_Detection/blob/main/images/predictionsData.PNG)
+
+Checking Results DataFrame to check if model was actually able to predict Fradulent Transactions
+![](https://github.com/reiccv/Project_3_Credit_Card_Fraud_Detection/blob/main/images/results_fradulent.PNG)
 
 ## Conclusions
 
