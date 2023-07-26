@@ -1,7 +1,7 @@
 # Project 3 
 
 ## Credit Card Fraud Detection Machine Learning Model
-This repository contains two different types of models that both aim for the same goal; detecting whether a transaction is fradulent or non fradulent. Containing a PCA model and a neural network model for credit card fraud detection. 
+This repository contains two different types of models that both aim for the same goal; detecting whether a transaction is fradulent or non fradulent. Containing a logistic Regression model and a neural network model for credit card fraud detection. 
 The model is designed to analyze credit card transactions and predict whether a 
 transaction is fraudulent or legitimate. It is trained on a labeled dataset of historical credit card transactions, 
 where each transaction is labeled as either "fraud" or "non-fraud."
@@ -11,6 +11,7 @@ where each transaction is labeled as either "fraud" or "non-fraud."
 * [Installation Guide](##installation-guide)
 * [Dataset](##dataset)
 * [Neural Network Model](##neural-network-model)
+* [Logistic Regression Model](##logistic-regression-model)
 * [Model Evaluation Metrics](##model-evaluation-metrics)
 * [Conclusions](#conclusions)
 
@@ -26,6 +27,10 @@ You can install these dependencies using pip:
 
 `pip install tensorflow keras pandas numpy`
 
+### Imports
+
+![]()
+
 ## Dataset
 
 The dataset used to train and evaluate the model is included in this repository, you can find various publicly available datasets for credit card fraud detection on online platforms such as Kaggle or UCI Machine Learning Repository.
@@ -36,13 +41,21 @@ Credit Card Fraud Detection Neural Network Model. Neural networks are capable of
 
 The neural network model is built using TensorFlow and Keras. It employs several layers, including input layers, hidden layers, and an output layer. The architecture is designed to handle the complexities of credit card transaction data and extract meaningful patterns for fraud detection.
 
+### Data Cleaning
+
+![]()
+
+![]()
+
+![]()
+
 ### High Accuracy 
 When properly trained and optimized, neural network models can achieve high accuracy in detecting fraudulent transactions. 
 They can significantly reduce false positives and false negatives, thus improving the overall performance of fraud detection systems.
 Real time detection can also be acchieved through all of this with further advancements in the model.
 In turn the model can keep learning and adapt to newer fraud patterns.
 
-
+## Logistic Regression Model
 
 ## Model Evaluation Metrics
 When evaluating the model's performance, consider the following metrics:
